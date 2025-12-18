@@ -1,0 +1,133 @@
+/* --- Main Container for the Cart Page --- */
+.cartpage {
+  /* Use a padding that works well on mobile and desktop */
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto; /* Center the cart on the screen */
+  font-family: Arial, sans-serif;
+}
+
+/* --- Individual Cart Item Container --- */
+.cartmain {
+  display: flex;
+  /* Space out the items within the container */
+  justify-content: space-between;
+  /* Vertically align items in the middle */
+  align-items: center;
+  /* Add padding around the content */
+  padding: 15px 0;
+  /* A subtle border to separate items */
+  border-bottom: 1px solid #eee;
+}
+
+/* Remove border from the last item */
+.cartmain:last-child {
+  border-bottom: none;
+}
+
+/* --- Product Image Styling --- */
+.cartmain img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* Ensures the image isn't cropped */
+  margin-right: 20px;
+  border-radius: 4px; /* Slight rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Price and Quantity Text Styling --- */
+.cartmain h5 {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+  flex-basis: 150px; /* Give price/quantity a fixed minimum width */
+  text-align: right;
+}
+
+.cartmain h5:first-of-type {
+  text-align: left; /* Keep price/title aligned left or center */
+  flex-basis: 30%; /* Give title/image more space */
+}
+
+/* --- Quantity Control Buttons --- */
+.cartmain button {
+  background-color: #3498db; /* A nice blue color */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.cartmain button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* --- Empty Cart Message Styling --- */
+.emptyCartMessage {
+  text-align: center;
+  padding: 50px;
+  color: #777;
+  font-size: 1.2em;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.grandtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  /* A top border to separate items from the total */
+  border-top: 2px solid #333;
+}
+
+.grandtotal h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+/* --- Responsive Layout for Small Screens (e.g., Mobile) --- */
+@media (max-width: 600px) {
+  .cartmain {
+    /* Stack the content vertically or wrap it */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+
+  .cartmain img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  /* Group Price, Quantity, and Buttons together */
+  .cartmain h5 {
+    font-size: 0.9em;
+    flex-basis: 100%; /* Take up full width */
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  /* Put buttons on their own line */
+  .cartmain button {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 0;
+    padding: 6px 10px;
+  }
+
+  /* Adjust the price to be next to the title on small screens */
+  .cartmain h5:first-of-type {
+    flex-basis: 70%;
+  }
+}

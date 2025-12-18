@@ -1,0 +1,48 @@
+body {
+  padding-top: 100px;
+}
+.productcontainer {
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  /* Keep existing shadow/transition styles */
+  box-shadow: -5px 19px 24px -27px rgba(23, 23, 23, 1);
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #646060;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+.card h2 {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+.card h2,
+.card p {
+  font-size: 1rem;
+}
+
+@media (min-width: 500px) {
+  .productcontainer {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+}
