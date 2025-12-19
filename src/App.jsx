@@ -49,7 +49,7 @@ const App = () => {
   const totalitem = cart.reduce((total, item) => total + item.quantity, 0);
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/Ecommerce-fetch-API-site">
         <Header totalitem={totalitem} />
         <Routes>
           <Route
