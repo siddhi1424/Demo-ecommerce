@@ -13,7 +13,7 @@ const Cartpage = ({ cartItems, deleteitem, updateitemqnt }) => {
         <>
           {cartItems.map((item) => (
             <div className={styles.cartmain}>
-              <img src={item.thumbnail} alt={item.title} />
+              <img src={item.image} alt={item.title} />
               <h5>price-${item.price.toFixed(2)}</h5>
               <h5>Quantity: {item.quantity}</h5>
               <h5>Total: $ {itemtotalprice(item).toFixed(2)}</h5>

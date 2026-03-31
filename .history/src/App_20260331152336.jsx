@@ -6,7 +6,6 @@ import ProductdataAPI from "./components/ProductdataAPI";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cart from "./components/Cartpage";
 import About from "./components/About";
-import Contact from "./components/Contact";
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -61,7 +60,6 @@ const App = () => {
             path="/products"
             element={<ProductdataAPI addToCart={addToCart} />}
           ></Route>
-          <Route path="/Contact" element={<Contact />}></Route>
           <Route
             path="/Cart"
             element={

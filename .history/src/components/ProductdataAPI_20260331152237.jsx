@@ -18,6 +18,7 @@ const ProductdataAPI = ({ addToCart }) => {
       const response = await fetch("https://dummyjson.com/products");
       const getdata = await response.json();
 
+      // ✅ FIX HERE
       setData(getdata.products);
       setFilter(getdata.products);
 
@@ -41,6 +42,7 @@ const ProductdataAPI = ({ addToCart }) => {
             <div key={item.id} className={styles.card}>
               <h3>{item.category.toUpperCase()}</h3>
 
+              {/* ✅ FIX IMAGE */}
               <img src={item.thumbnail} alt={item.title} />
 
               <h2>{item.title}</h2>

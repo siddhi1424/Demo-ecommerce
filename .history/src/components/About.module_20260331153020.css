@@ -1,0 +1,83 @@
+.container {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* LAYOUT */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* LEFT INFO */
+.info {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.info h3 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.info p {
+  color: #555;
+}
+
+/* FORM */
+.form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: black;
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #000, #333);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #222, #000);
+}

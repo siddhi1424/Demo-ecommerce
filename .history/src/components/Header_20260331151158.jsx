@@ -21,7 +21,7 @@ const Header = ({ totalitem }) => {
       <header className={styles.header}>
         <div>
           <Link to="/">
-            <h1>EcosShop</h1>
+            <button>EcosShop</button>
           </Link>
         </div>
         {/* <div>
@@ -29,8 +29,8 @@ const Header = ({ totalitem }) => {
         </div> */}
         <div className={styles.navLinks}>
           <nav className={`${styles.navpages} ${showmenu ? styles.show : ""}`}>
-            <Link to="/"> About </Link>
-            <Link to="/products"> Products </Link>
+            <Link to="/About"> About </Link>
+            <Link to="/Category"> Category </Link>
             <Link to="/contact"> Contact </Link>
             <Link to="/Cart">
               <FaCartArrowDown size={20} />

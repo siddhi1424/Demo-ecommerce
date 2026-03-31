@@ -61,7 +61,7 @@ const App = () => {
             path="/products"
             element={<ProductdataAPI addToCart={addToCart} />}
           ></Route>
-          <Route path="/Contact" element={<Contact />}></Route>
+          <Route path="/contact" element={<Contact/>}
           <Route
             path="/Cart"
             element={

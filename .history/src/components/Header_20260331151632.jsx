@@ -29,8 +29,8 @@ const Header = ({ totalitem }) => {
         </div> */}
         <div className={styles.navLinks}>
           <nav className={`${styles.navpages} ${showmenu ? styles.show : ""}`}>
-            <Link to="/"> About </Link>
-            <Link to="/products"> Products </Link>
+            <Link to="/about"> About </Link>
+            <Link to="/category"> Category </Link>
             <Link to="/contact"> Contact </Link>
             <Link to="/Cart">
               <FaCartArrowDown size={20} />
