@@ -34,18 +34,20 @@
 
 /* RIGHT SIDE FORM */
 .form {
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
 
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 }
+
 /* INPUTS */
 input,
 textarea {
@@ -57,13 +59,9 @@ textarea {
 }
 
 /* TEXTAREA */
-input,
 textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
+  height: 120px;
+  resize: none;
 }
 
 /* BUTTON */
@@ -81,19 +79,19 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* 📱 MOBILE FIX */
 @media (max-width: 768px) {
   .wrapper {
     flex-direction: column;
-    align-items: center; /* 🔥 IMPORTANT */
-  }
-
-  .form {
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto; /* 🔥 FORCE CENTER */
+    align-items: center;
+    gap: 30px;
   }
 
   .info {
     text-align: center;
+  }
+
+  .form {
+    width: 100%;
   }
 }

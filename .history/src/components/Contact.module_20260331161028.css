@@ -34,18 +34,17 @@
 
 /* RIGHT SIDE FORM */
 .form {
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+
+  margin: auto;
 
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
+
 /* INPUTS */
 input,
 textarea {

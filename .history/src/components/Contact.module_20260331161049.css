@@ -34,9 +34,9 @@
 
 /* RIGHT SIDE FORM */
 .form {
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
+  width: 100%; /* 🔥 full width */
+  max-width: 350px; /* control size */
+  margin: 0 auto; /* center */
 
   background: white;
   padding: 20px;

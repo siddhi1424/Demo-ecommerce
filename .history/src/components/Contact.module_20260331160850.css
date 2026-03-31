@@ -34,18 +34,17 @@
 
 /* RIGHT SIDE FORM */
 .form {
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+
+  margin: auto;
 
   background: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
+
 /* INPUTS */
 input,
 textarea {
@@ -57,13 +56,9 @@ textarea {
 }
 
 /* TEXTAREA */
-input,
 textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
+  height: 120px;
+  resize: none;
 }
 
 /* BUTTON */
