@@ -13,7 +13,7 @@ const Header = ({ totalitem }) => {
   //search
   const searchfilter = (event) => {
     setFilter(
-      data.filter((f) => f.category.toLowerCase().includes(event.target.value)),
+      data.filter((f) => f.category.toLowerCase().includes(event.target.value))
     );
   };
   return (
@@ -22,9 +22,9 @@ const Header = ({ totalitem }) => {
         <div>
           <h1>EcosShop</h1>
         </div>
-        {/* <div>
+        <div>
           <Searchfilter searchitem={searchfilter} />
-        </div> */}
+        </div>
         <div className={styles.navLinks}>
           <nav className={`${styles.navpages} ${showmenu ? styles.show : ""}`}>
             <Link to="/About"> About </Link>

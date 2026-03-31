@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 const Searchfilter = ({ searchitem }) => {
   return (
     <div
-      style={{
+      styles={{
         display: "flex",
         justifyContent: "center",
         alignItem: "center",

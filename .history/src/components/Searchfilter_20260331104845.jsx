@@ -3,13 +3,7 @@ import styles from "./Header.module.css";
 
 const Searchfilter = ({ searchitem }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItem: "center",
-      }}
-    >
+    <div styles={{ display: "flex", justifyContent: "center" }}>
       <input type="text" placeholder="Search" onChange={searchitem} />
     </div>
   );
