@@ -1,22 +1,22 @@
 .header {
   display: flex;
-  background: #ffd700;
+  flex-direction: row;
+  background-color: yellow;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0 10px;
+  text-decoration: none;
 
+  /*postion fixed on top*/
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3000;
-  box-sizing: border-box;
-}
 
-.navLinks {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  /*prevent overflow*/
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 .navpages {
@@ -26,39 +26,39 @@
 
 .navpages a {
   text-transform: uppercase;
-  text-decoration: none !important;
-  color: black;
-  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s ease;
 }
-
 .navpages a:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
-
 .hammenu {
   display: none;
+  margin-right: 40px;
   cursor: pointer;
 }
-
 .show {
   display: flex !important;
 }
-
 @media (max-width: 998px) {
   .hammenu {
     display: block;
+    margin-right: 5px;
   }
-
   .navpages {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
-    background-color: #ffd700;
-    width: 90%;
-    max-width: 300px;
+    top: 90px;
+    background-color: yellow;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 500px;
     align-items: center;
     padding: 10px 0;
     border-radius: 8px;
+    z-index: 4000;
   }
 }
